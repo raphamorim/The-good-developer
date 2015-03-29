@@ -1,0 +1,41 @@
+safe:        false
+baseurl:     /
+url: http://thegooddev.com/
+
+name: The Good Developer
+description: My book talks about how to become a better developer 
+url: http://thegooddev.com/
+domain: raphamorim.com
+
+source:      .
+destination: ./_site
+
+lsi:         false
+highlighter: pygments
+markdown:    kramdown
+permalink:   /:title/
+
+maruku:
+  use_tex:    false
+  use_divs:   false
+  png_engine: blahtex
+  png_dir:    images/latex
+  png_url:    /images/latex
+
+rdiscount:
+  extensions: []
+
+kramdown:
+  auto_ids: true,
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: inline
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: style
