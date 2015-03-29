@@ -68,6 +68,10 @@ body {
   margin: 0 auto;
 }
 
+body.chapter {
+  margin-top: 60px;
+}
+
 h1 {
   font-family: "HarabaraHand","Essays 1743", georgia;
   font-weight: 300;

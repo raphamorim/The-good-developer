@@ -68,6 +68,31 @@ body {
   margin: 0 auto;
 }
 
+body.chapter {
+  margin-top: 60px;
+}
+
+body.chapter h2 {
+  margin-bottom: 30px;  
+}
+
+body.chapter .bookmark {
+  margin-bottom: 80px;
+  padding-left: 10px;
+  background: rgba(0,0,0,.05);
+  width: 400px;
+  border-right: 30px solid rgba(0,0,0,.1);
+  font-family: georgia;
+}
+
+body.chapter .bookmark a:link {
+  color: FireBrick;
+}
+
+body.chapter .bookmark a:visited {
+  color: RosyBrown;
+}
+
 h1 {
   font-family: "HarabaraHand","Essays 1743", georgia;
   font-weight: 300;
@@ -92,56 +117,57 @@ hr {
 }
 
 /* Cover */
-section.main {
+section#main {
   height: 700px;
 }
 
-section.main>.content {
+section#main>.content {
   padding-top: 100px;
   text-align: center;
 }
 
-section.main h1, section.main h2 {
+section#main h1, section#main h2 {
   margin-top: 80px;
 }
 
-section.main h4.ico {
+section#main h4.ico {
   margin-top: 50px;
   font-size: 100;
   font-size: 60px;
 }
 
 /* Dedication */
-section.dedication {
+section#dedication {
   height: 700px;
 } 
 
-section.dedication>.content {
+section#dedication>.content {
   padding-top: 300px;
   text-align: center;
 }
 
 /* Summary */
-section.summary {
+section#summary {
+  height: 700px;
   padding-top: 0px;
   padding-bottom: 120px;
 }
 
-section.summary ul>li {
+section#summary ul>li {
   margin: 20px;
   background: url('../images/dot.png') 0px 0.8em repeat-x rgb(255, 255, 255);
 }
 
-section.summary span {
+section#summary span {
   background: #FFF;
 }
 
-section.summary span a:link {
+section#summary span a:link {
   color: FireBrick;
   cursor: pointer;
   font-size: 28px;
 }
 
-section.summary span a:visited {
+section#summary span a:visited {
   color: RosyBrown;
 }

@@ -4,7 +4,7 @@ class: default
 language: 'en'
 ---
 
-<section class="main">
+<section id="main">
 	<div class="content">
 		<h1>The Good Developer</h1>
 		<h2>by</h2>
@@ -13,13 +13,13 @@ language: 'en'
 	</div>
 </section>
 
-<section class="dedication">
+<section id="dedication">
 	<div class="content">
 		<h3>In dedication to my father, my greatest hero.</h3>
 	</div>
 </section>
 
-<section class="summary">
+<section id="summary">
 	<div class="content">
 		<h2>Summary</h2>
 		<ul>

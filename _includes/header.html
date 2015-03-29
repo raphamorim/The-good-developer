@@ -9,9 +9,15 @@
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="{{ site.baseurl }}assets/images/favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="{% if page.layout == 'chapter' %}../{% endif %}{{ site.baseurl }}assets/images/favicon.png" type="image/x-icon" />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/css/base.css" type="text/css" />
+  <link rel="stylesheet" href="{% if page.layout == 'chapter' %}../{% endif %}{{ site.baseurl }}assets/css/base.css" type="text/css" />
 </head>
-<body{% if page.class %} class="{{ page.class }}"{% endif %}>
+<body{% if page.class %} class="{{page.layout}} {{ page.class }}"{% endif %}>
+
+{% if page.layout == 'chapter' %}
+	<div class="bookmark">
+		<p><a href='../#summary'>summary</a> > {{ page.class }}</p>
+	</div>
+{% endif %}
