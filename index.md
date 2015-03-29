@@ -32,6 +32,9 @@ language: 'en'
 		<li>
 			<span>3. <a href='introduction'>The good legacy</a></span>
 		</li>
+		<li>
+			<span>3. <a href='introduction'>The good patterns</a></span>
+		</li>
 	</div>
 </section>
 
